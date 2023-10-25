@@ -25,6 +25,10 @@ header {
     background-color: red;
 }
 
+h1 {
+    font-family: 'Robto Slab', sans-serif;
+}
+
 /* Main */
 main {
     background-color: white;
