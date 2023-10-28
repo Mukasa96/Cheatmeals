@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px red;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
 }
 
@@ -63,7 +66,7 @@ h1 {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: red;
+    background-color: #ff0000;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -87,7 +90,7 @@ nav {
 
 /* Main */
 main {
-    background-color: white;
+    background-color: #ffff;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
@@ -105,7 +108,8 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: red;
+    color: #ff0000;
+
 }
 
 
@@ -122,7 +126,7 @@ main {
     }
 
 
-    #menu {
+    #men {
         display: flex;
     }
 
@@ -137,7 +141,7 @@ main {
     #logo {
         font-size: 280%;
         line-height: 75px;
-        margin: 0 0 5rem;
+        margin: 0 0.5rem;
     }
 
     /* Main content */
