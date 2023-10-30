@@ -162,6 +162,32 @@ main {
     justify-content: center;
 }
 
+/* Branches section */
+#branches {
+    background: url("../images/shutterstock_2290015129.jpg") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#branches div {
+    color: #ffff;
+    background-color: rgba(255, 6, 6, 0.6);
+    padding: 30px;
+    text-align: center;
+    /* This will not wrap on screen of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of branches div over the background image */
+    border: 2px solid white;
+}
+
+#branches h3 {
+    /* Override the heading colour set in general styles */
+    color: #ffff;
+}
+
 /* Footer */
 
 #social-networks {
