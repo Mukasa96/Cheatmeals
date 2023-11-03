@@ -35,7 +35,7 @@ h1, h2, h3 {
 /* Header */
 header {
     background-color: red;
-    padding: 0 1rem;
+    padding: 0 2rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -74,7 +74,7 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
+    box-shadow: 0 2px 2px #ffff;
     display: none;
     top: 100%;
 }
@@ -125,14 +125,20 @@ main {
     color: #ffff;
 }
 
-/* Reasons section */
+/* Benefits section */
 
 #benefits-quailty time {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
+
 }
 
+#benefits h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+    color: #ff0000;
+}
 
 #benefits-quailty time > div {
     line-height: 20px;
@@ -145,7 +151,7 @@ main {
 }
 
 #benefits hr {
-    border-top: 1px solid #3a3a3a;
+    border-top: 1px solid red;
     margin: 5px 0;
 }
 
@@ -154,14 +160,14 @@ main {
     height: 90vw; 
     width: 90vw;
     margin-bottom: 20px;
-    /* Makes the sqaure into a circle */
+    /* Makes the sqaure image into a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
 }
 
 #benefits-image {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -190,6 +196,69 @@ main {
 #branches h3 {
     /* Override the heading colour set in general styles */
     color: #ffff;
+}
+
+/* Menu section */
+#menu div {
+    background: url("../images/shutterstock_2290015129.jpg") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: bold;
+}
+
+
+ #menu div {
+    
+    color: darkred;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    text-decoration: bold;
+    /* This will not wrap on screen of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 100px;
+    flex-grow: 1;
+    /* Creates a grid of menu div over the background image */
+    border: 4px solid darkred;
+ 
+}
+
+#menu h3 {
+    /* Override the heading colour set in general styles */
+    color: white;
+    background-color: darkred;
+    text-decoration: bold;
+}
+
+/* Contact section */
+
+#contacts {
+    background: url("../images/shutterstock_2290015129.jpg") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contacts div {
+    color: darkred;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    text-decoration: bold;
+    /* This will not wrap on screen of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 100px;
+    flex-grow: 1;
+    /* Creates a grid of menu div over the background image */
+    border: 4px solid darkred;
+}
+
+#contacts h3 {
+     /* Override the heading colour set in general styles */
+     color: white;
+     background-color: darkred;
+     text-decoration: bold;
 }
 
 /* Footer */
@@ -223,11 +292,11 @@ main {
     }
 
 
-    #men {
+    #dropdown menu {
         display: flex;
     }
 
-    #menu>li {
+    #dropdown menu > li {
         padding-left: 1rem;
     }
 
@@ -236,7 +305,7 @@ main {
     }
 
     #logo {
-        font-size: 280%;
+        font-size: 350%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
@@ -249,13 +318,13 @@ main {
 
     /* Large devices (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {
-        #menu a:hover {
+        #dropdown menu  a:hover {
             border-bottom: 1px solid #3a3a3a;
         }
     }
 
     @media  and (min-width 1200px) {
-        /* Reasons section */
+        /* Our vision section */
         #benefits {
             display: flex;
             flex-direction: row;
